@@ -22,8 +22,6 @@ def second_supply_for_fourth_of_july(holiday_hash)
   holiday_hash[:summer][:fourth_of_july].last
  
  
- 
- 
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
@@ -69,7 +67,8 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-
+  
+  holiday_hash.values.flatten
 end
 
 def all_holidays_with_bbq(holiday_hash)
